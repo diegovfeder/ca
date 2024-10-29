@@ -20,7 +20,7 @@ export default async function ProjectsPage({
   }
 
   return (
-    <main className="w-full pt-16 min-h-[calc(100vh-4rem)]">
+    <main className="w-full pt-16 px-5 mb-8 min-h-[calc(100vh-4rem)]">
       {validCategory ? (
         <>
           <ProjectGrid category={validCategory} />

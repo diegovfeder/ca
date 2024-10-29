@@ -20,4 +20,8 @@ export interface ProjectDetails extends Project {
   images: string[];
   year: number;
   location: string;
+  status?: string;
+  projectDate?: string;
+  constructionDate?: string;
+  photographer?: string;
 }

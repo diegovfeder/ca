@@ -52,7 +52,7 @@ export function CarouselControls({
         <button
           key={index}
           onClick={() => handleClick(index)}
-          className={`h-2 w-24 rounded-xl transition-all ${
+          className={`h-2 w-2 rounded-xl transition-all ${
             index === current
               ? "bg-stone-50"
               : "bg-stone-50/60 hover:bg-stone-50/60"

@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Footer, Header } from "@/components";
+import { Header } from "@/components";
 
 export const metadata: Metadata = {
   title: "Caroline Andrusko | Arquitetos",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
+    // TODO: Add apple icons
     apple: [
       { url: "/apple-touch-icon.png" },
       { url: "/apple-touch-icon-72x72.png", sizes: "72x72" },
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
       "Em 2017, Caroline inaugurou seu novo escritório. Caroline Andrusko Arquitetos é fruto do seu crescimento profissional e da sua capacidade de compreender a identidade única de cada cliente.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logos/dark-gray.png",
         width: 1200,
         height: 630,
         alt: "Caroline Andrusko Arquitetos",
@@ -69,7 +70,6 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

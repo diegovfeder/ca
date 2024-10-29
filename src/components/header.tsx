@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useCallback, useState, Suspense } from "react";
+import { InstagramLink } from "./instagram-link";
 
 const navigation = [
   { name: "EQUIPE", href: "/equipe" },
@@ -36,16 +37,12 @@ function HeaderContent() {
         const isActive =
           pathname === "/projetos" && categoria === linkCategoria;
 
-        return `text-sm transition-colors ${
-          isActive ? "font-semibold" : "font-normal hover:underline"
-        }`;
+        return `${isActive ? "font-semibold" : "font-normal"}`;
       }
 
       // For regular links without query parameters
       const isActive = pathname === href;
-      return `text-sm transition-colors ${
-        isActive ? "font-semibold" : "font-normal hover:underline"
-      }`;
+      return `${isActive ? "font-semibold" : "font-normal"}`;
     },
     [categoria, pathname]
   );
@@ -58,24 +55,30 @@ function HeaderContent() {
             href="/"
             className="text-xl font-semibold hover:underline uppercase tracking-widest"
           >
-            Caroline Andrusko
-            {/* <Image
-              src="/logos/ca.svg"
+            {/* Caroline Andrusko */}
+            <Image
+              src="/logos/caroline-andrusko.png"
               alt="Caroline Andrusko"
-              width={120}
-              height={120}
-            /> */}
+              width={140}
+              height={140}
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="text-lg tracking-widest hidden md:flex items-center md:gap-4 lg:gap-6">
+          <ul className="text-sm hidden md:flex items-center md:gap-4 lg:gap-6">
             {navigation.map((item) => (
               <li key={item.name}>
-                <Link href={item.href} className={getLinkClassName(item.href)}>
+                <Link
+                  href={item.href}
+                  className={`md:tracking-[.2em] lg:tracking-[.3em] xl:tracking-[.4em] relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:bg-current transition-all after:duration-500 after:ease-out hover:after:w-full after:w-0 after:content-[''] ${getLinkClassName(
+                    item.href
+                  )}`}
+                >
                   {item.name}
                 </Link>
               </li>
             ))}
+            <InstagramLink />
           </ul>
 
           {/* Mobile Hamburger Button */}
@@ -123,13 +126,18 @@ function HeaderContent() {
                   <li key={item.name} className="py-2">
                     <Link
                       href={item.href}
-                      className={getLinkClassName(item.href)}
+                      className={`text-md relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:bg-current transition-all after:duration-500 after:ease-out hover:after:w-full after:w-0 after:content-[''] ${getLinkClassName(
+                        item.href
+                      )}`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.name}
                     </Link>
                   </li>
                 ))}
+                <li className="w-full py-5 flex justify-start">
+                  <InstagramLink />
+                </li>
               </ul>
             </div>
           </>

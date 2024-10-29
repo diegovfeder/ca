@@ -6,14 +6,12 @@ interface ProjectImageProps {
   project: Project;
 }
 
-// TODO: Improve UI, hover effect, etc...
-// FIXME: Project details
 const ProjectImage: React.FC<ProjectImageProps> = ({ project }) => {
   return (
     <Link
       key={project.id}
       href={`/projetos/${project.id}`}
-      className="group relative overflow-hidden border-b border-black"
+      className="group overflow-hidden"
     >
       <div className="aspect-[4/3] relative">
         <Image
@@ -22,10 +20,9 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ project }) => {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
-      <div className="absolute bottom-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h2 className="text-2xl font-black tracking-tight">{project.title}</h2>
+      <div className="pt-1 text-stone-600">
+        <h2 className="text-md tracking-[.3em]">{project.title}</h2>
       </div>
     </Link>
   );

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { INSTAGRAM_URL } from "@/constants";
 import InstagramIcon from "./icons/instagram";
 
+// FIXME: Maybe remove this component?
 export function Footer() {
   return (
     <footer className="flex w-full pt-5 pb-6 px-4 md:px-6 lg:px-8 xl:px-12 justify-between">

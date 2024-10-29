@@ -35,12 +35,42 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <main className="container mx-auto px-4 pt-24">
+    <main className="pt-24 mb-12">
       <div className="mx-auto">
-        <h1 className="text-4xl font-black text-center pb-8 tracking-tighter">
+        <h1 className="text-3xl text-stone-600 text-center pb-8 tracking-wide">
           {project.title}
         </h1>
-        {/* <p className="mt-6 text-lg">{project.description}</p> */}
+
+        <div className="mx-16 grid grid-cols-3 gap-x-8 gap-y-4 mt-8 mb-12 text-stone-600">
+          <div>
+            <h3 className="font-medium mb-1">Local</h3>
+            <p>{project.location}</p>
+          </div>
+
+          <div>
+            <h3 className="font-medium mb-1">Status</h3>
+            <p>{project.status}</p>
+          </div>
+
+          <div>
+            <h3 className="font-medium mb-1">Projeto</h3>
+            <p>{project.projectDate}</p>
+          </div>
+
+          <div>
+            <h3 className="font-medium mb-1">Obra</h3>
+            <p>{project.constructionDate}</p>
+          </div>
+
+          <div>
+            <h3 className="font-medium mb-1">Fotos</h3>
+            <p>{project.photographer}</p>
+          </div>
+        </div>
+
+        <div className="m-16 text-stone-600">
+          <p className="text-lg">{project.description}</p>
+        </div>
 
         <div className="grid gap-1">
           {project.images.map((image, index) => (

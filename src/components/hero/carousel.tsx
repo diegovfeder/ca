@@ -61,8 +61,8 @@ export function Hero() {
         <Image
           src="/logos/white.png"
           alt="Caroline Andrusko"
-          width={1024}
-          height={1024}
+          width={320}
+          height={320}
           priority
         />
       </div>

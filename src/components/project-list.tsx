@@ -8,7 +8,7 @@ interface ProjectListProps {
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
   return (
-    <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="p-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => (
         <ProjectImage key={project.id} project={project} />
       ))}

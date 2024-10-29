@@ -102,7 +102,8 @@ export const residencialProjects: Project[] = [
 export const residencialProjectDetails: ProjectDetails[] = [
   {
     ...residencialProjects[0],
-    description: "TODO: ...",
+    description:
+      "O projeto é fruto de um trabalho extenso de experimentação. Vários estudos foram descartados até concluir-se que a solução adotada traz a melhor relação com o contexto urbano em que está inserido. Trata-se de um edifício de apartamentos localizado no alto de um dos bairros mais valorizados e agradáveis de Curitiba. Um lote de esquina, com formato irregular, resultante de uma rua que corta o traçado ortogonal da região. Um local privilegiado, com boa visibilidade de várias distâncias e ângulos.",
     images: [
       "/images/projetos/residencial/apt-cee/detalhes/01.webp",
       "/images/projetos/residencial/apt-cee/detalhes/02.webp",
@@ -118,6 +119,10 @@ export const residencialProjectDetails: ProjectDetails[] = [
     // TODO: Check year
     year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectDate: "2017 - 2018",
+    constructionDate: "2020",
+    photographer: "Eduardo Macarios",
   },
   {
     ...residencialProjects[1],
