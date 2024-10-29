@@ -1,91 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Footer, Header } from "@/components";
-
-// const gloriolaDisplay = localFont({
-//   src: [
-//     {
-//       path: "./fonts/gloriola-display/GloriolaDisplayBlack.otf",
-//       weight: "900",
-//       style: "normal",
-//     },
-//     {
-//       path: "./fonts/gloriola-display/GloriolaDisplayFat.otf",
-//       weight: "800",
-//       style: "normal",
-//     },
-//     {
-//       path: "./fonts/gloriola-display/GloriolaDisplayHair.otf",
-//       weight: "700",
-//       style: "normal",
-//     },
-//     {
-//       path: "./fonts/gloriola-display/GloriolaDisplayThin.otf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--font-gloriola-display",
-// });
-
-// FIXME: Check if this font is being applied
-// Gloriola
-const gloriola = localFont({
-  src: [
-    {
-      path: "./fonts/gloriola/GloriolaStdBold.otf",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdBoldIt.otf",
-      weight: "900",
-      style: "italic",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdLight.otf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdLightIt.otf",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdMedium.otf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdMediumIt.otf",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdRegular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdRegularIt.otf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdSemiBold.otf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./fonts/gloriola/GloriolaStdSemiBoldIt.otf",
-      weight: "600",
-      style: "italic",
-    },
-  ],
-  variable: "--font-gloriola",
-});
 
 export const metadata: Metadata = {
   title: "Caroline Andrusko | Arquitetos",
@@ -151,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${gloriola.variable} antialiased`}>
+      <body className="antialiased">
         <Header />
         {children}
         <Footer />
