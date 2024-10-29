@@ -14,22 +14,23 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex flex-col items-start bg-gray-200 p-4 shadow-md">
+    <div className="group">
       {imageUrl && (
-        <div className="flex w-full justify-center items-center">
-          <div className="relative w-64 h-96 mb-4">
-            <Image
-              src={imageUrl}
-              alt={name}
-              fill
-              className="object-cover border-4 border-white"
-            />
-          </div>
+        <div className="overflow-hidden mb-6 relative border-b border-black">
+          <Image
+            src={imageUrl}
+            alt={name}
+            width={256}
+            height={400}
+            className="object-cover object-center"
+          />
         </div>
       )}
-      <h4 className="text-md text-stone-600 uppercase">{title}</h4>
-      <h5 className="text-xl font-semibold text-stone-800">{name}</h5>
-      <p className="text-sm text-stone-700 text-pretty">{description}</p>
+      <h3 className="text-xl font-medium text-stone-950 mb-1">{name}</h3>
+      <p className="text-sm text-stone-500 uppercase tracking-wider mb-2">
+        {title}
+      </p>
+      <p className="text-neutral-400 leading-relaxed">{description}</p>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { TeamMember } from "@/components";
-import Image from "next/image";
 
 export default function EquipePage() {
   const teamMembers = [
@@ -42,10 +41,7 @@ export default function EquipePage() {
 
   return (
     <main className="container mx-auto px-4 pt-24 min-h-[calc(100vh-4rem)]">
-      {/* Header Section */}
       <h1 className="text-4xl font-light text-stone-950 mb-12">Equipe</h1>
-
-      {/* Quote Section */}
       <div className="mb-24 relative">
         <div className="absolute top-0 left-0 w-16 h-[1px] bg-stone-600" />
         <blockquote className="pt-8 px-6">
@@ -60,32 +56,15 @@ export default function EquipePage() {
         </blockquote>
         <div className="absolute bottom-0 right-0 w-16 h-[1px] bg-stone-600" />
       </div>
-
-      {/* Team Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="group">
-            {member.imageUrl && (
-              <div className="overflow-hidden mb-6 relative border-b border-black">
-                <Image
-                  src={member.imageUrl}
-                  alt={member.name}
-                  width={256}
-                  height={400}
-                  className="object-cover object-center"
-                />
-              </div>
-            )}
-            <h3 className="text-xl font-medium text-stone-950 mb-1">
-              {member.name}
-            </h3>
-            <p className="text-sm text-stone-500 uppercase tracking-wider mb-2">
-              {member.title}
-            </p>
-            <p className="text-neutral-400 leading-relaxed">
-              {member.description}
-            </p>
-          </div>
+        {teamMembers.map((member) => (
+          <TeamMember
+            key={member.name}
+            name={member.name}
+            title={member.title}
+            description={member.description}
+            imageUrl={member.imageUrl}
+          />
         ))}
       </div>
     </main>

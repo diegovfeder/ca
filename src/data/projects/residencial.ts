@@ -300,12 +300,12 @@ export const residencialProjectDetails: ProjectDetails[] = [
     ...residencialProjects[12],
     description: "TODO: ...",
     images: [
-      "/images/projetos/residencial/ed-trianon/detalhes/01.jpg",
-      "/images/projetos/residencial/ed-trianon/detalhes/02.jpg",
-      "/images/projetos/residencial/ed-trianon/detalhes/03.jpg",
-      "/images/projetos/residencial/ed-trianon/detalhes/04.jpg",
-      "/images/projetos/residencial/ed-trianon/detalhes/05.jpg",
-      "/images/projetos/residencial/ed-trianon/detalhes/06.jpg",
+      "/images/projetos/residencial/ed-trianon/detalhes/01.jpeg",
+      "/images/projetos/residencial/ed-trianon/detalhes/02.jpeg",
+      "/images/projetos/residencial/ed-trianon/detalhes/03.jpeg",
+      "/images/projetos/residencial/ed-trianon/detalhes/04.jpeg",
+      "/images/projetos/residencial/ed-trianon/detalhes/05.jpeg",
+      "/images/projetos/residencial/ed-trianon/detalhes/06.jpeg",
     ],
     // TODO: Check year
     year: 2021,
