@@ -3,7 +3,7 @@
 import Link from "next/link";
 // import Image from "next/image";
 import { usePathname, useSearchParams } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback, useState, Suspense } from "react";
 
 const navigation = [
   { name: "EQUIPE", href: "/equipe" },
@@ -14,7 +14,8 @@ const navigation = [
   { name: "CONTATO", href: "/contato" },
 ];
 
-export function Header() {
+// Split the header content into a separate client component
+function HeaderContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -135,5 +136,27 @@ export function Header() {
         </nav>
       </div>
     </header>
+  );
+}
+
+// Main Header component that includes the Suspense boundary
+export function Header() {
+  return (
+    <Suspense
+      fallback={
+        // You can customize this loading state
+        <header className="bg-stone-50 fixed top-0 z-50 w-full border-b font">
+          <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12">
+            <nav className="flex h-16 items-center justify-between">
+              <div className="text-xl font-semibold uppercase tracking-widest">
+                Caroline Andrusko
+              </div>
+            </nav>
+          </div>
+        </header>
+      }
+    >
+      <HeaderContent />
+    </Suspense>
   );
 }

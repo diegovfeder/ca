@@ -2,8 +2,10 @@ import { notFound } from "next/navigation";
 import { ProjectGrid } from "@/components/project-grid";
 import { Category } from "@/types";
 
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
 interface ProjectsPageProps {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: SearchParams;
 }
 
 export default async function ProjectsPage({

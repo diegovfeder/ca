@@ -2,10 +2,12 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projectDetails } from "@/data";
 
+type Params = Promise<{
+  id: string;
+}>;
+
 interface ProjectPageProps {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
 export async function generateMetadata({ params }: ProjectPageProps) {
