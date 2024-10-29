@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fafaf9; /* Stone 50 */
+  --foreground: #0c0a09; /* Stone 950 */
+}
+
+/* Add this to modify all focus states globally */
+@layer base {
+  *:focus {
+    @apply outline-2 outline outline-foreground outline-offset-2 !important;
+  }
+
+  /* Optional: If you want to remove the outline for mouse users but keep it for keyboard navigation */
+  *:focus:not(:focus-visible) {
+    @apply outline-none !important;
+  }
+  
+  *:focus-visible {
+    @apply outline-2 outline outline-foreground outline-offset-2 !important;
+  }
+
+  main {
+    @apply bg-stone-50;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-enter {
+  animation: fadeIn 0.5s ease-out forwards;
+}

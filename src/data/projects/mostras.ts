@@ -1,0 +1,135 @@
+import { Project, ProjectDetails, Category } from "@/types";
+
+export const mostrasProjects: Project[] = [
+  {
+    id: "artefacto-2022",
+    title: "ARTEFACTO 2022",
+    image: "/images/projetos/mostras/artefacto/2022/hero.jpg",
+    category: Category.MOSTRAS,
+    isFeatured: true,
+  },
+  {
+    id: "artefacto-2021",
+    title: "ARTEFACTO 2021",
+    image: "/images/projetos/mostras/artefacto/2021/hero.jpg",
+    category: Category.MOSTRAS,
+    isFeatured: true,
+  },
+  {
+    id: "artefacto-2020",
+    title: "ARTEFACTO 2020",
+    image: "/images/projetos/mostras/artefacto/2020/hero.jpg",
+    category: Category.MOSTRAS,
+  },
+  {
+    id: "artefacto-2018",
+    title: "ARTEFACTO 2018",
+    image: "/images/projetos/mostras/artefacto/2018/hero.jpg",
+    category: Category.MOSTRAS,
+  },
+  {
+    id: "vitrine-artefacto-2020",
+    title: "VITRINE ARTEFACTO 2020",
+    image: "/images/projetos/mostras/vitrine/artefacto/2020/hero.jpg",
+    category: Category.MOSTRAS,
+  },
+  {
+    id: "vitrine-botteh-2024",
+    title: "VITRINE BOTTEH 2024",
+    image: "/images/projetos/mostras/vitrine/botteh/2024/hero.jpg",
+    category: Category.MOSTRAS,
+    isFeatured: true,
+  },
+];
+
+// Detailed project data
+export const mostrasProjectDetails: ProjectDetails[] = [
+  {
+    ...mostrasProjects[0],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/artefacto/2022/detalhes/01.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/02.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/03.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/04.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/05.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/06.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/07.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/08.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/09.jpg",
+      "/images/projetos/mostras/artefacto/2022/detalhes/10.jpg",
+    ],
+    year: 2021,
+    location: "Curitiba, PR",
+  },
+  {
+    ...mostrasProjects[1],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/artefacto/2021/detalhes/01.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/02.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/03.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/04.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/05.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/06.jpg",
+      "/images/projetos/mostras/artefacto/2021/detalhes/07.jpg",
+    ],
+    year: 2021,
+    location: "Curitiba, PR",
+  },
+  {
+    ...mostrasProjects[2],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/artefacto/2020/detalhes/01.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/02.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/03.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/04.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/05.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/06.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/07.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/08.jpg",
+      "/images/projetos/mostras/artefacto/2020/detalhes/09.jpg",
+    ],
+    year: 2020,
+    location: "Curitiba, PR",
+  },
+  {
+    ...mostrasProjects[3],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/artefacto/2018/detalhes/01.jpg",
+      "/images/projetos/mostras/artefacto/2018/detalhes/02.jpg",
+      "/images/projetos/mostras/artefacto/2018/detalhes/03.jpg",
+      "/images/projetos/mostras/artefacto/2018/detalhes/04.jpg",
+      "/images/projetos/mostras/artefacto/2018/detalhes/05.jpg",
+    ],
+    year: 2018,
+    location: "Curitiba, PR",
+  },
+  {
+    ...mostrasProjects[4],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/01.jpg",
+      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/02.jpg",
+    ],
+    year: 2020,
+    location: "Curitiba, PR",
+  },
+  {
+    ...mostrasProjects[5],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/01.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/02.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/03.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/04.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/05.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/06.jpg",
+      "/images/projetos/mostras/vitrine/botteh/2024/detalhes/07.jpg",
+    ],
+    year: 2024,
+    location: "Curitiba, PR",
+  },
+];
