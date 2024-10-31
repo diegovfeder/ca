@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Header } from "@/components";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Caroline Andrusko | Arquitetos",
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
+        <Toaster />
       </body>
     </html>
   );

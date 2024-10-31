@@ -1,6 +1,7 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projectDetails } from "@/data";
+import { ImageGallery } from "@/components/image-gallery";
 
 type Params = Promise<{
   id: string;
@@ -72,24 +73,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <p className="text-lg">{project.description}</p>
         </div>
 
-        <div className="grid gap-1">
-          {project.images.map((image, index) => (
-            // FIXME: Aspect ratio should be dynamic
-            <div key={index} className="relative aspect-[16/9]">
-              <Image
-                src={image}
-                alt={`${project.title} - Imagem ${index + 1}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="pt-2 w-full flex justify-between text-xl font-extralight">
-          <p>{project.year}</p>
-          <p>{project.location}</p>
-        </div>
+        <ImageGallery images={project.images} projectTitle={project.title} />
       </div>
     </main>
   );

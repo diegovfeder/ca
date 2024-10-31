@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-// import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Category, Project } from "@/types";
 import { CarouselControls } from "./carousel-controls";
+import { useSwipe } from "@/hooks/use-swipe";
+import { ChevronLeft, ChevronRight } from "lucide-react"; // Or any other icon library
 
 const heroProjects: Project[] = [
   {
@@ -30,8 +31,24 @@ const heroProjects: Project[] = [
 export function Hero() {
   const [current, setCurrent] = useState(0);
 
+  const goToNext = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % heroProjects.length);
+  }, []);
+
+  const goToPrevious = useCallback(() => {
+    setCurrent(
+      (prev) => (prev - 1 + heroProjects.length) % heroProjects.length
+    );
+  }, []);
+
+  // Use the swipe hook
+  useSwipe({
+    onSwipeLeft: goToNext,
+    onSwipeRight: goToPrevious,
+  });
+
   return (
-    <section className="relative h-screen w-full overflow-hidden pt-16">
+    <section className="relative h-screen w-full overflow-hidden pt-16 group">
       {/* Background Slider */}
       <div className="relative h-full w-full">
         {heroProjects.map((project, index) => (
@@ -56,18 +73,35 @@ export function Hero() {
         ))}
       </div>
 
-      {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-8">
+      {/* Navigation Buttons - Only visible on hover on desktop */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:group-hover:flex items-center justify-center w-12 h-12 rounded-full bg-stone-950/20 hover:bg-stone-950/40 transition-all"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="w-6 h-6 text-white" />
+      </button>
+      <button
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:group-hover:flex items-center justify-center w-12 h-12 rounded-full bg-stone-950/20 hover:bg-stone-950/40 transition-all"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="w-6 h-6 text-white" />
+      </button>
+
+      {/* Logo */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
         <Image
           src="/logos/white.png"
           alt="Caroline Andrusko"
           width={320}
           height={320}
           priority
+          className="w-auto h-auto"
         />
       </div>
 
-      {/* Navigation */}
+      {/* Navigation Dots */}
       <div className="absolute bottom-8 left-0 right-0">
         <CarouselControls
           total={heroProjects.length}

@@ -51,11 +51,7 @@ function HeaderContent() {
     <header className="bg-stone-50 fixed top-0 z-50 w-full border-b font">
       <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12">
         <nav className="flex h-16 items-center justify-between">
-          <Link
-            href="/"
-            className="text-xl font-semibold hover:underline uppercase tracking-widest"
-          >
-            {/* Caroline Andrusko */}
+          <Link href="/">
             <Image
               src="/logos/caroline-andrusko.png"
               alt="Caroline Andrusko"
@@ -65,7 +61,7 @@ function HeaderContent() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="text-sm hidden md:flex items-center md:gap-4 lg:gap-6">
+          <ul className="text-xs hidden md:flex items-center gap-4 md:gap-2 lg:gap-6">
             {navigation.map((item) => (
               <li key={item.name}>
                 <Link
