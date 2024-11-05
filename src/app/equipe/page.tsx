@@ -69,13 +69,15 @@ export default function EquipePage() {
           </p>
         </div>
         {/* Image container */}
-        <div className="relative w-full md:w-[520px] h-[400px] md:h-[600px] flex-shrink-0 order-first md:order-last">
-          {/* TODO: Update images, improve dimensions */}
+        <div className="relative  h-fit flex-shrink-0 order-first md:order-last">
           <Image
             src="/images/equipe/caroline-andrusko.png"
             alt="Profile"
-            fill
-            className="object-cover"
+            width={192 * 2}
+            height={288 * 2}
+            className="h-auto"
+            // fill
+            // className="object-cover object-top"
             priority
           />
         </div>
@@ -108,9 +110,7 @@ export default function EquipePage() {
       {/* Bottom Images - Stack on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative aspect-[3/2]">
-          {/* TODO: Update images */}
           <Image
-            // src="/images/equipe/escritorio-exterior.jpg"
             src="/images/projetos/comercial/fiep/hero.webp"
             alt="Office exterior"
             fill
@@ -119,7 +119,6 @@ export default function EquipePage() {
         </div>
         <div className="relative aspect-[3/2]">
           <Image
-            // src="/images/equipe/escritorio-interior.jpg"
             src="/images/projetos/comercial/fiep/hero.webp"
             alt="Office interior"
             fill

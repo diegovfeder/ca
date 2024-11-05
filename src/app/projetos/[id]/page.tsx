@@ -37,7 +37,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <main className="pt-24 mb-12">
-      <div className="mx-auto">
+      <div className="container mx-auto">
         <h1 className="text-3xl text-stone-600 text-center pb-8 tracking-wide">
           {project.title}
         </h1>

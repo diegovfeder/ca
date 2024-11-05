@@ -6,7 +6,6 @@ export const comercialProjects: Project[] = [
     title: "AUAU CARLOS DE CARVALHO",
     image: "/images/projetos/comercial/auau/hero.webp",
     category: Category.COMERCIAL,
-    isFeatured: true,
   },
   {
     id: "fiep",
@@ -19,7 +18,6 @@ export const comercialProjects: Project[] = [
     title: "LOBBY EUROBUSINESS",
     image: "/images/projetos/comercial/eurobusiness/hero.webp",
     category: Category.COMERCIAL,
-    isFeatured: true,
   },
 ];
 

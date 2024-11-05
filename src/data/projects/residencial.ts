@@ -26,7 +26,6 @@ export const residencialProjects: Project[] = [
     title: "APARTAMENTO LFA",
     image: "/images/projetos/residencial/apt-lfa/hero.webp",
     category: Category.RESIDENCIAL,
-    isFeatured: true,
   },
   {
     id: "apt-nld",

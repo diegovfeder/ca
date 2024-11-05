@@ -1,4 +1,4 @@
-import { Hero, ProjectList } from "@/components";
+import { Hero, HomeProjectGrid } from "@/components";
 import { getFeaturedProjects } from "@/utils";
 
 export default function Home() {
@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <main className="w-full">
       <Hero />
-      {/* TODO: Add more featured projects */}
-      <ProjectList projects={featuredProjects} />
+      <HomeProjectGrid projects={featuredProjects} />
     </main>
   );
 }

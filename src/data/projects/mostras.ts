@@ -6,14 +6,12 @@ export const mostrasProjects: Project[] = [
     title: "ARTEFACTO 2022",
     image: "/images/projetos/mostras/artefacto/2022/hero.webp",
     category: Category.MOSTRAS,
-    isFeatured: true,
   },
   {
     id: "artefacto-2021",
     title: "ARTEFACTO 2021",
     image: "/images/projetos/mostras/artefacto/2021/hero.webp",
     category: Category.MOSTRAS,
-    isFeatured: true,
   },
   {
     id: "artefacto-2020",
@@ -38,7 +36,6 @@ export const mostrasProjects: Project[] = [
     title: "VITRINE BOTTEH 2024",
     image: "/images/projetos/mostras/vitrine/botteh/2024/hero.webp",
     category: Category.MOSTRAS,
-    isFeatured: true,
   },
 ];
 

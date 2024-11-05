@@ -25,7 +25,6 @@ export const corporativoProjects: Project[] = [
     title: "LINHARES & VALENTINI ADVOCACIA",
     image: "/images/projetos/corporativo/linhares/hero.webp",
     category: Category.CORPORATIVO,
-    isFeatured: true,
   },
 ];
 

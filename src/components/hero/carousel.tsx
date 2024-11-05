@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 import { Category, Project } from "@/types";
 import { CarouselControls } from "./carousel-controls";
 import { useSwipe } from "@/hooks/use-swipe";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // Or any other icon library
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const heroProjects: Project[] = [
   {
