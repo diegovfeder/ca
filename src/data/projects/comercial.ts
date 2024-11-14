@@ -8,20 +8,19 @@ export const comercialProjects: Project[] = [
     category: Category.COMERCIAL,
   },
   {
-    id: "fiep",
-    title: "FIEP - SALÃO DE EVENTOS",
-    image: "/images/projetos/comercial/fiep/hero.webp",
-    category: Category.COMERCIAL,
-  },
-  {
     id: "eurobusiness",
     title: "LOBBY EUROBUSINESS",
     image: "/images/projetos/comercial/eurobusiness/hero.webp",
     category: Category.COMERCIAL,
   },
+  {
+    id: "fiep",
+    title: "FIEP - SALÃO DE EVENTOS",
+    image: "/images/projetos/comercial/fiep/hero.webp",
+    category: Category.COMERCIAL,
+  },
 ];
 
-// Detailed project data
 export const comercialProjectDetails: ProjectDetails[] = [
   {
     ...comercialProjects[0],
@@ -46,19 +45,6 @@ export const comercialProjectDetails: ProjectDetails[] = [
     ...comercialProjects[1],
     description: "TODO: ...",
     images: [
-      "/images/projetos/comercial/fiep/detalhes/01.webp",
-      "/images/projetos/comercial/fiep/detalhes/02.webp",
-      "/images/projetos/comercial/fiep/detalhes/03.webp",
-      "/images/projetos/comercial/fiep/detalhes/04.webp",
-    ],
-    // TODO: Check year
-    year: 2020,
-    location: "Curitiba, PR",
-  },
-  {
-    ...comercialProjects[2],
-    description: "TODO: ...",
-    images: [
       "/images/projetos/comercial/eurobusiness/detalhes/01.webp",
       "/images/projetos/comercial/eurobusiness/detalhes/02.webp",
       "/images/projetos/comercial/eurobusiness/detalhes/03.webp",
@@ -66,6 +52,19 @@ export const comercialProjectDetails: ProjectDetails[] = [
     ],
     // TODO: Check year
     year: 2022,
+    location: "Curitiba, PR",
+  },
+  {
+    ...comercialProjects[2],
+    description: "TODO: ...",
+    images: [
+      "/images/projetos/comercial/fiep/detalhes/01.webp",
+      "/images/projetos/comercial/fiep/detalhes/02.webp",
+      "/images/projetos/comercial/fiep/detalhes/03.webp",
+      "/images/projetos/comercial/fiep/detalhes/04.webp",
+    ],
+    // TODO: Check year
+    year: 2020,
     location: "Curitiba, PR",
   },
 ];

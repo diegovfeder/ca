@@ -1,6 +1,5 @@
 import { ContactForm } from "./contact-form";
 import { ContactEmailTemplate } from "./email-template";
-import { Footer } from "./footer";
 import { Header } from "./header";
 import { Hero } from "./hero/carousel";
 import { HomeProjectGrid } from "./home-project-grid";
@@ -14,7 +13,6 @@ import TeamMember from "./team-member";
 export {
   ContactForm,
   ContactEmailTemplate,
-  Footer,
   Header,
   Hero,
   HomeProjectGrid,

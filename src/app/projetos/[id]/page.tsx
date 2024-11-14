@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projectDetails } from "@/data";
 import { ImageGallery } from "@/components/image-gallery";

@@ -1,6 +1,6 @@
 import React from "react";
-import { Project } from "@/types";
 import Link from "next/link";
+import { Project } from "@/types";
 import HomeProjectImage from "./home-project-image";
 
 interface HomeProjectGridProps {

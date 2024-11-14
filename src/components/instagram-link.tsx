@@ -1,4 +1,3 @@
-// ... existing imports ...
 import Link from "next/link";
 import InstagramIcon from "./icons/instagram";
 

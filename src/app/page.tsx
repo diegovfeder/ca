@@ -1,9 +1,7 @@
 import { Hero, HomeProjectGrid } from "@/components";
-import { getFeaturedProjects } from "@/utils";
+import { featuredProjects } from "@/data";
 
 export default function Home() {
-  const featuredProjects = getFeaturedProjects();
-
   return (
     <main className="w-full">
       <Hero />

@@ -2,42 +2,23 @@
 
 import Image from "next/image";
 import { useState, useCallback } from "react";
-import { Category, Project } from "@/types";
-import { CarouselControls } from "./carousel-controls";
-import { useSwipe } from "@/hooks/use-swipe";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const heroProjects: Project[] = [
-  {
-    id: "apt-trw-01",
-    title: "Residência Jardins",
-    image: "/images/hero/apt-trw-01.jpg",
-    category: Category.RESIDENCIAL,
-  },
-  {
-    id: "apt-trw-02",
-    title: "Escritório Corporativo",
-    image: "/images/hero/apt-trw-02.jpg",
-    category: Category.RESIDENCIAL,
-  },
-  {
-    id: "apt-trw-03",
-    title: "Loja Conceito",
-    image: "/images/hero/apt-trw-03.jpg",
-    category: Category.RESIDENCIAL,
-  },
-];
+import { useSwipe } from "@/hooks/use-swipe";
+import { carouselProjects } from "@/data";
+import { CarouselControls } from "./carousel-controls";
 
 export function Hero() {
   const [current, setCurrent] = useState(0);
 
+  // FIXME: Similar to what we have on controls, whenever an image changes the count should be reset.
+  // TODO: We might want to merge the logic inside carousel controls
   const goToNext = useCallback(() => {
-    setCurrent((prev) => (prev + 1) % heroProjects.length);
+    setCurrent((prev) => (prev + 1) % carouselProjects.length);
   }, []);
 
   const goToPrevious = useCallback(() => {
     setCurrent(
-      (prev) => (prev - 1 + heroProjects.length) % heroProjects.length
+      (prev) => (prev - 1 + carouselProjects.length) % carouselProjects.length
     );
   }, []);
 
@@ -51,7 +32,7 @@ export function Hero() {
     <section className="relative h-screen w-full overflow-hidden pt-16 group">
       {/* Background Slider */}
       <div className="relative h-full w-full">
-        {heroProjects.map((project, index) => (
+        {carouselProjects.map((project, index) => (
           <div
             key={project.id}
             className={`absolute inset-0 h-full w-full transition-opacity duration-1000 ${
@@ -104,7 +85,7 @@ export function Hero() {
       {/* Navigation Dots */}
       <div className="absolute bottom-8 left-0 right-0">
         <CarouselControls
-          total={heroProjects.length}
+          total={carouselProjects.length}
           current={current}
           setCurrent={setCurrent}
         />

@@ -1,35 +1,36 @@
 import Image from "next/image";
 
-export default function EquipePage() {
-  const architects = [
-    {
-      firstName: "JULIA",
-      lastName: "RAEDER",
-      imageUrl: "/images/equipe/julia-raeder.jpg",
-    },
-    {
-      firstName: "THAISA",
-      lastName: "COMASSETTO",
-      imageUrl: "/images/equipe/thaisa-comasseto.jpg",
-    },
-    {
-      firstName: "BRUNA",
-      lastName: "LIGESKI",
-      imageUrl: "/images/equipe/bruna-ligeski.jpg",
-    },
-    // TODO: Update images
-    {
-      firstName: "HENRIQUE",
-      lastName: "DRANSFELD",
-      imageUrl: "/images/equipe/henrique-oramsfeld.jpg",
-    },
-    {
-      firstName: "GABRIEL",
-      lastName: "LUTZ",
-      imageUrl: "/images/equipe/gabriel-lutz.jpg",
-    },
-  ];
+const architects = [
+  {
+    firstName: "JULIA",
+    lastName: "RAEDER",
+    imageUrl: "/images/equipe/julia-raeder.jpg",
+  },
+  {
+    firstName: "THAISA",
+    lastName: "COMASSETTO",
+    imageUrl: "/images/equipe/thaisa-comasseto.jpg",
+  },
+  {
+    firstName: "BRUNA",
+    lastName: "LIGESKI",
+    imageUrl: "/images/equipe/bruna-ligeski.jpg",
+  },
+  // TODO: Update henrique's image
+  {
+    firstName: "HENRIQUE",
+    lastName: "DRANSFELD",
+    imageUrl: "/images/equipe/henrique-oramsfeld.jpg",
+  },
+  // TODO: Update gabriel's image
+  {
+    firstName: "GABRIEL",
+    lastName: "LUTZ",
+    imageUrl: "/images/equipe/gabriel-lutz.jpg",
+  },
+];
 
+export default function EquipePage() {
   return (
     <main className="pt-24 px-4 md:px-6 lg:px-8 xl:px-12 pb-8">
       {/* Hero Section - Stack on mobile, side-by-side on desktop */}
@@ -76,8 +77,6 @@ export default function EquipePage() {
             width={192 * 2}
             height={288 * 2}
             className="h-auto"
-            // fill
-            // className="object-cover object-top"
             priority
           />
         </div>
