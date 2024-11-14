@@ -36,7 +36,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
             <Dialog.Content
-              className="fixed top-1/2 left-1/2 mt-12 -translate-x-1/2 -translate-y-1/2 max-w-[90vw] max-h-[90vh] w-full md:w-auto"
+              className="fixed top-1/2 left-1/2 pt-8 -translate-x-1/2 -translate-y-1/2 max-w-[90vw] max-h-[90vh] w-full md:w-auto"
               onInteractOutside={() => setOpenIndex(null)}
             >
               <Dialog.Title className="sr-only">{projectTitle}</Dialog.Title>
