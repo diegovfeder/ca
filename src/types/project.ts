@@ -20,7 +20,7 @@ export interface ProjectDetails extends Project {
   year: number;
   location: string;
   status?: string;
-  projectDate?: string;
+  date?: string;
   constructionDate?: string;
   photographer?: string;
 }

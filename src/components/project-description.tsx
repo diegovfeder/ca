@@ -4,7 +4,7 @@ import React from "react";
 interface ProjectDetails {
   location: string;
   status: string;
-  projectDate: string;
+  date: string;
   constructionDate: string;
   photographer: string;
   description: string;
@@ -14,36 +14,36 @@ interface ProjectDescriptionProps {
   details: ProjectDetails;
 }
 
-const ProjectDescription: React.FC<ProjectDescriptionProps> = ({ project }) => {
+const ProjectDescription: React.FC<ProjectDescriptionProps> = ({ details }) => {
   return (
     <>
-      <div className="mx-16 grid grid-cols-3 gap-x-8 gap-y-4 mt-8 mb-12 text-stone-600">
+      <div className="mx-8 sm:mx-16 grid grid-cols-3 gap-x-8 gap-y-4 mt-8 mb-12 text-stone-600">
         <div>
-          <h3 className="font-medium mb-1">Local</h3>
-          <p>{project.location}</p>
+          <h3 className="font-semibold mb-1">Local</h3>
+          <p className="text-sm sm:text-base">{details.location}</p>
         </div>
 
         <div>
-          <h3 className="font-medium mb-1">Status</h3>
-          <p>{project.status}</p>
+          <h3 className="font-semibold mb-1">Status</h3>
+          <p className="text-sm sm:text-base">{details.status}</p>
         </div>
 
         <div>
-          <h3 className="font-medium mb-1">Projeto</h3>
-          <p>{project.projectDate}</p>
+          <h3 className="font-semibold mb-1">Projeto</h3>
+          <p className="text-sm sm:text-base">{details.date}</p>
         </div>
 
         <div>
-          <h3 className="font-medium mb-1">Obra</h3>
-          <p>{project.constructionDate}</p>
+          <h3 className="font-semibold mb-1">Obra</h3>
+          <p className="text-sm sm:text-base">{details.constructionDate}</p>
         </div>
         <div>
-          <h3 className="font-medium mb-1">Fotos</h3>
-          <p>{project.photographer}</p>
+          <h3 className="font-semibold mb-1">Fotos</h3>
+          <p className="text-sm sm:text-base">{details.photographer}</p>
         </div>
       </div>
-      <div className="m-16 text-stone-600">
-        <p className="text-lg">{project.description}</p>
+      <div className="mx-8 sm:mx-16 py-8 text-stone-600">
+        <p className="text-lg">{details.description}</p>
       </div>
     </>
   );
