@@ -22,7 +22,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
           onOpenChange={(open) => setOpenIndex(open ? index : null)}
         >
           <Dialog.Trigger asChild>
-            <div className="relative aspect-[16/9] cursor-pointer">
+            <div className="relative aspect-[16/9] cursor-pointer hover:brightness-75 transition-all duration-700">
               <Image
                 src={image}
                 alt={`${projectTitle} - Imagem ${index + 1}`}
@@ -36,7 +36,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/50 backdrop-blur-sm" />
             <Dialog.Content
-              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[90vw] max-h-[90vh] w-full md:w-auto"
+              className="fixed top-1/2 left-1/2 mt-12 -translate-x-1/2 -translate-y-1/2 max-w-[90vw] max-h-[90vh] w-full md:w-auto"
               onInteractOutside={() => setOpenIndex(null)}
             >
               <Dialog.Title className="sr-only">{projectTitle}</Dialog.Title>
@@ -46,7 +46,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
                   alt={`${projectTitle} - Imagem ${index + 1}`}
                   width={1200}
                   height={800}
-                  className="object-contain w-full md:w-auto md:max-w-[85vw] h-auto max-h-[85vh]"
+                  className=" object-contain w-full md:w-auto md:max-w-[85vw] h-auto max-h-[85vh]"
                   sizes="(max-width: 768px) 90vw, 85vw"
                   priority
                 />
@@ -56,7 +56,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
               {index > 0 && (
                 <button
                   onClick={() => setOpenIndex(index - 1)}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-white"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-stone-950/20 hover:bg-stone-950/40 transition-all"
                 >
                   <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
@@ -64,7 +64,7 @@ export function ImageGallery({ images, projectTitle }: ImageGalleryProps) {
               {index < images.length - 1 && (
                 <button
                   onClick={() => setOpenIndex(index + 1)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 hover:bg-white"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-stone-950/20 hover:bg-stone-950/40 transition-all"
                 >
                   <ChevronRight className="w-6 h-6 text-white" />
                 </button>
