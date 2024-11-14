@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
+import { ImageGallery, ProjectDescription } from "@/components";
 import { projectDetails } from "@/data";
-import { ImageGallery } from "@/components/image-gallery";
 
 type Params = Promise<{
   id: string;
@@ -40,6 +40,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <h1 className="text-3xl text-stone-600 text-center pb-8 tracking-wide">
           {project.title}
         </h1>
+
+        <ProjectDescription
+          details={{
+            location: project.location,
+            status: project.status,
+            projectDate: project.projectDate,
+            constructionDate: project.constructionDate,
+            photographer: project.photographer,
+            description: project.description,
+          }}
+        />
 
         <div className="mx-16 grid grid-cols-3 gap-x-8 gap-y-4 mt-8 mb-12 text-stone-600">
           <div>
