@@ -11,7 +11,6 @@ export interface Project {
   title: string;
   image: string;
   category: Category;
-  isFeatured?: boolean; // For projects to be displayed on the home page
 }
 
 // Extended 'ProjectDetails' interface for project/[id] page

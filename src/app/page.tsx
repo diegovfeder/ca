@@ -1,14 +1,11 @@
-import { Hero, ProjectList } from "@/components";
-import { getFeaturedProjects } from "@/utils";
+import { Hero, HomeProjectGrid } from "@/components";
+import { featuredProjects } from "@/data";
 
 export default function Home() {
-  const featuredProjects = getFeaturedProjects();
-
   return (
     <main className="w-full">
       <Hero />
-      {/* TODO: Add more featured projects */}
-      <ProjectList projects={featuredProjects} />
+      <HomeProjectGrid projects={featuredProjects} />
     </main>
   );
 }

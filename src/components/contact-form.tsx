@@ -2,6 +2,9 @@
 
 import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,56 +55,61 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      ref={formRef}
-      onSubmit={handleSubmit}
-      className="space-y-6 uppercase text-sm text-stone-500"
-    >
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
       <div className="flex gap-4">
-        <div className="flex-1">
-          <label htmlFor="name" className="block text-sm font-medium mb-1">
+        <div className="flex-1 space-y-2">
+          <Label
+            htmlFor="name"
+            className="text-sm text-stone-500 uppercase tracking-widest font-medium"
+          >
             Nome
-          </label>
-          <input
+          </Label>
+          <Input
             type="text"
             name="name"
             id="name"
             required
-            className="w-full px-4 py-2 border border-stone-300 focus:outline-none focus:ring-1 focus:ring-stone-400"
+            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm"
           />
         </div>
 
-        <div className="flex-1">
-          <label htmlFor="email" className="block text-sm font-medium mb-1">
+        <div className="flex-1 space-y-2">
+          <Label
+            htmlFor="email"
+            className="text-sm text-stone-500 uppercase tracking-widest font-medium"
+          >
             E-mail
-          </label>
-          <input
+          </Label>
+          <Input
             type="email"
             name="email"
             id="email"
             required
-            className="w-full px-4 py-2 border border-stone-300 focus:outline-none focus:ring-1 focus:ring-stone-400"
+            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm"
           />
         </div>
       </div>
 
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-1">
+      <div className="space-y-2">
+        <Label
+          htmlFor="message"
+          className="text-sm text-stone-500 uppercase tracking-widest font-medium"
+        >
           Mensagem
-        </label>
-        <textarea
+        </Label>
+        <Textarea
           name="message"
           id="message"
           rows={6}
           required
-          className="w-full px-4 py-2 border border-stone-300 focus:outline-none focus:ring-1 focus:ring-stone-400"
+          className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-[160px] px-4 py-2 uppercase font-medium bg-stone-800 text-white hover:bg-stone-700 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-[160px] px-4 py-2 text-sm uppercase tracking-widest font-medium bg-stone-800 text-white hover:bg-stone-700 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? (
           <div className="flex items-center justify-center">

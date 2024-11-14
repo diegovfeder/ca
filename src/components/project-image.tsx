@@ -20,6 +20,7 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ project }) => {
           fill
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-all duration-500" />
       </div>
       <div className="pt-1 text-stone-600">
         <h2 className="text-md tracking-[.3em]">{project.title}</h2>
