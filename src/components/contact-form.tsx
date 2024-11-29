@@ -1,10 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -69,10 +70,9 @@ export function ContactForm() {
             name="name"
             id="name"
             required
-            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm"
+            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm bg-white rounded-none"
           />
         </div>
-
         <div className="flex-1 space-y-2">
           <Label
             htmlFor="email"
@@ -85,11 +85,10 @@ export function ContactForm() {
             name="email"
             id="email"
             required
-            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm"
+            className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm bg-white rounded-none"
           />
         </div>
       </div>
-
       <div className="space-y-2">
         <Label
           htmlFor="message"
@@ -102,14 +101,13 @@ export function ContactForm() {
           id="message"
           rows={6}
           required
-          className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm resize-none"
+          className="border-stone-300 focus-visible:ring-stone-400 text-stone-600 text-sm resize-none bg-white rounded-none"
         />
       </div>
-
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-[160px] px-4 py-2 text-sm uppercase tracking-widest font-medium bg-stone-800 text-white hover:bg-stone-700 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-[160px] px-4 py-2 text-sm uppercase tracking-widest font-medium bg-stone-950 text-white hover:bg-stone-800 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? (
           <div className="flex items-center justify-center">

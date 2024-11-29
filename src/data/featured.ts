@@ -8,8 +8,8 @@ export const featuredProjects: Project[] = [
     category: Category.RESIDENCIAL,
   },
   {
-    id: "apt-litoral-mgg",
-    title: "APARTAMENTO LITORAL MGG",
+    id: "res-miami-mgg",
+    title: "RESIDÊNCIA MIAMI MGG",
     image: "/images/featured/res-mgg-02.webp",
     category: Category.RESIDENCIAL,
   },
@@ -27,7 +27,7 @@ export const featuredProjects: Project[] = [
   },
   {
     id: "res-arc",
-    title: "RESIDENCIAL ARC",
+    title: "RESIDÊNCIA ARC",
     image: "/images/featured/res-arc-05.webp",
     category: Category.RESIDENCIAL,
   },

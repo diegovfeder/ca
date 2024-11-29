@@ -1,18 +1,18 @@
-import { comercialProjects, comercialProjectDetails } from "./comercial";
-import { corporativoProjectDetails, corporativoProjects } from "./corporativo";
+import {
+  comercialCorporativoProjects,
+  comercialCorporativoProjectDetails,
+} from "./comercialCorporativo";
 import { mostrasProjectDetails, mostrasProjects } from "./mostras";
 import { residencialProjectDetails, residencialProjects } from "./residencial";
 
 const projects = [
-  ...comercialProjects,
-  ...corporativoProjects,
+  ...comercialCorporativoProjects,
   ...mostrasProjects,
   ...residencialProjects,
 ];
 
 const projectDetails = [
-  ...comercialProjectDetails,
-  ...corporativoProjectDetails,
+  ...comercialCorporativoProjectDetails,
   ...mostrasProjectDetails,
   ...residencialProjectDetails,
 ];

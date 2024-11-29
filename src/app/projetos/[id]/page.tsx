@@ -41,7 +41,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <h1 className="text-2xl sm:text-3xl text-stone-600 text-center pb-8 sm:pb-16 tracking-wide">
             {project.title}
           </h1>
-
           <ProjectDescription
             details={{
               location: project?.location || "",
@@ -53,7 +52,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             }}
           />
         </div>
-
         <ImageGallery images={project.images} projectTitle={project.title} />
       </div>
     </main>
