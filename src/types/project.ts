@@ -1,7 +1,6 @@
 export enum Category {
   RESIDENCIAL = "residencial",
-  COMERCIAL = "comercial",
-  CORPORATIVO = "corporativo",
+  COMERCIAL_E_CORPORATIVO = "comercial_e_corporativo",
   MOSTRAS = "mostras",
 }
 

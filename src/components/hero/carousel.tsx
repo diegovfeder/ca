@@ -1,28 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useSwipe } from "@/hooks/use-swipe";
+
 import { carouselProjects } from "@/data";
+import { useCarousel, useSwipe } from "@/hooks";
 import { CarouselControls } from "./carousel-controls";
 
 export function Hero() {
   const [current, setCurrent] = useState(0);
+  const { goToNext, goToPrevious, goToIndex } = useCarousel(
+    carouselProjects.length,
+    current,
+    setCurrent
+  );
 
-  // FIXME: Similar to what we have on controls, whenever an image changes the count should be reset.
-  // TODO: We might want to merge the logic inside carousel controls
-  const goToNext = useCallback(() => {
-    setCurrent((prev) => (prev + 1) % carouselProjects.length);
-  }, []);
-
-  const goToPrevious = useCallback(() => {
-    setCurrent(
-      (prev) => (prev - 1 + carouselProjects.length) % carouselProjects.length
-    );
-  }, []);
-
-  // Use the swipe hook
   useSwipe({
     onSwipeLeft: goToNext,
     onSwipeRight: goToPrevious,
@@ -87,7 +80,7 @@ export function Hero() {
         <CarouselControls
           total={carouselProjects.length}
           current={current}
-          setCurrent={setCurrent}
+          onDotClick={goToIndex}
         />
       </div>
     </section>

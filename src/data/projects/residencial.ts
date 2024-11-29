@@ -15,7 +15,7 @@ export const residencialProjects: Project[] = [
   },
   {
     id: "res-arc",
-    title: "RESIDENCIAL ARC",
+    title: "RESIDÊNCIA ARC",
     image: "/images/projetos/residencial/res-arc/hero.webp",
     category: Category.RESIDENCIAL,
   },
@@ -44,14 +44,14 @@ export const residencialProjects: Project[] = [
     category: Category.RESIDENCIAL,
   },
   {
-    id: "apt-litoral-mgg",
-    title: "APARTAMENTO LITORAL MGG",
+    id: "res-miami-mgg",
+    title: "RESIDÊNCIA MIAMI MGG",
     image: "/images/projetos/residencial/apt-litoral-mgg/hero.webp",
     category: Category.RESIDENCIAL,
   },
   {
     id: "res-erg",
-    title: "RESIDENCIAL ERG",
+    title: "RESIDÊNCIA ERG",
     image: "/images/projetos/residencial/res-erg/hero.webp",
     category: Category.RESIDENCIAL,
   },
@@ -75,7 +75,7 @@ export const residencialProjects: Project[] = [
   },
   {
     id: "res-ajb",
-    title: "RESIDENCIAL AJB",
+    title: "RESIDÊNCIA AJB",
     image: "/images/projetos/residencial/res-ajb/hero.webp",
     category: Category.RESIDENCIAL,
   },

@@ -14,19 +14,20 @@ const architects = [
   {
     firstName: "BRUNA",
     lastName: "LIGESKI",
-    imageUrl: "/images/equipe/bruna-ligeski.jpg",
+    // TODO: Update bruna's image
+    // imageUrl: "/images/equipe/bruna-ligeski.jpg",
   },
   // TODO: Update henrique's image
   {
     firstName: "HENRIQUE",
     lastName: "DRANSFELD",
-    imageUrl: "/images/equipe/henrique-oramsfeld.jpg",
+    // imageUrl: "/images/equipe/henrique-oramsfeld.jpg",
   },
   // TODO: Update gabriel's image
   {
     firstName: "GABRIEL",
     lastName: "LUTZ",
-    imageUrl: "/images/equipe/gabriel-lutz.jpg",
+    // imageUrl: "/images/equipe/gabriel-lutz.jpg",
   },
 ];
 
@@ -90,14 +91,18 @@ export default function EquipePage() {
       <div className="flex flex-wrap justify-center gap-3 gap-y-9 mb-12">
         {architects.map((architect) => (
           <div key={architect.firstName} className="w-[250px]">
-            <div className="relative w-full h-[340px] mb-2">
-              <Image
-                src={architect.imageUrl}
-                alt={architect.firstName}
-                fill
-                className="object-cover"
-              />
-            </div>
+            {architect.imageUrl ? (
+              <div className="relative w-full h-[380px] mb-2">
+                <Image
+                  src={architect.imageUrl}
+                  alt={architect.firstName}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ) : (
+              <div className="relative w-full h-[380px] mb-2 bg-stone-100 border-2 border-brown-800"></div>
+            )}
             <div className="text-start text-md font-semibold text-stone-400 leading-5 tracking-[.3em] flex flex-col">
               <span>{architect.firstName}</span>
               <span>{architect.lastName}</span>
@@ -110,7 +115,7 @@ export default function EquipePage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative aspect-[3/2]">
           <Image
-            src="/images/projetos/comercial/fiep/hero.webp"
+            src="/images/equipe/01-esq-externa.jpg"
             alt="Office exterior"
             fill
             className="object-cover"
@@ -118,7 +123,7 @@ export default function EquipePage() {
         </div>
         <div className="relative aspect-[3/2]">
           <Image
-            src="/images/projetos/comercial/fiep/hero.webp"
+            src="/images/equipe/02-dir-interna.jpg"
             alt="Office interior"
             fill
             className="object-cover"

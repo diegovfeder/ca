@@ -5,25 +5,25 @@ export const corporativoProjects: Project[] = [
     id: "bhs",
     title: "BHS CURITIBA",
     image: "/images/projetos/corporativo/bhs/hero.webp",
-    category: Category.CORPORATIVO,
+    category: Category.COMERCIAL_E_CORPORATIVO,
   },
   {
     id: "linhares-valentini",
     title: "LINHARES & VALENTINI ADVOCACIA",
     image: "/images/projetos/corporativo/linhares/hero.webp",
-    category: Category.CORPORATIVO,
+    category: Category.COMERCIAL_E_CORPORATIVO,
   },
   {
     id: "redecam",
     title: "ESCRITÓRIO REDECAM",
     image: "/images/projetos/corporativo/redecam/hero.webp",
-    category: Category.CORPORATIVO,
+    category: Category.COMERCIAL_E_CORPORATIVO,
   },
   {
     id: "mdgp",
     title: "ESCRITÓRIO MDGP",
     image: "/images/projetos/corporativo/mdgp/hero.webp",
-    category: Category.CORPORATIVO,
+    category: Category.COMERCIAL_E_CORPORATIVO,
   },
 ];
 

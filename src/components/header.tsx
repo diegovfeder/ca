@@ -9,8 +9,10 @@ import { InstagramLink } from "./instagram-link";
 const navigation = [
   { name: "EQUIPE", href: "/equipe" },
   { name: "RESIDENCIAL", href: "/projetos?categoria=residencial" },
-  { name: "COMERCIAL", href: "/projetos?categoria=comercial" },
-  { name: "CORPORATIVO", href: "/projetos?categoria=corporativo" },
+  {
+    name: "COMERCIAL/CORPORATIVO",
+    href: "/projetos?categoria=comercial_e_corporativo",
+  },
   { name: "MOSTRAS", href: "/projetos?categoria=mostras" },
   { name: "CONTATO", href: "/contato" },
 ];

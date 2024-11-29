@@ -16,7 +16,7 @@ interface ProjectDescriptionProps {
 
 const ProjectDescription: React.FC<ProjectDescriptionProps> = ({ details }) => {
   return (
-    <>
+    <div className="flex flex-col justify-center mx-auto max-w-6xl">
       <div className="mx-8 sm:mx-16 grid grid-cols-3 gap-x-8 gap-y-4 mt-8 mb-12 text-stone-600">
         <div>
           <h3 className="font-semibold mb-1">Local</h3>
@@ -45,7 +45,7 @@ const ProjectDescription: React.FC<ProjectDescriptionProps> = ({ details }) => {
       <div className="mx-8 sm:mx-16 py-8 text-stone-600">
         <p className="text-lg">{details.description}</p>
       </div>
-    </>
+    </div>
   );
 };
 
