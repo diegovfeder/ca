@@ -17,7 +17,7 @@ export const featuredProjects: Project[] = [
     id: "bhs",
     title: "BHS",
     image: "/images/featured/bhs-03.webp",
-    category: Category.COMERCIAL,
+    category: Category.COMERCIAL_E_CORPORATIVO,
   },
   {
     id: "apt-cee",
