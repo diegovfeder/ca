@@ -1,16 +1,5 @@
 import { Project, ProjectDetails, Category } from "@/types";
 
-/**
- * A list of projects for exhibitions.
- * - Order by year
- * - Order by class [artefacto, vitrine]
- *
- * @type {Project[]}
- * @property {string} id - Unique identifier for the project.
- * @property {string} title - Title of the project.
- * @property {string} image - URL to the project's image.
- * @property {Category} category - Category of the project.
- */
 export const mostrasProjects: Project[] = [
   {
     id: "artefacto-2024",
@@ -63,25 +52,17 @@ export const mostrasProjects: Project[] = [
   {
     id: "artefacto-2017",
     title: "ARTEFACTO 2017",
-    image: "/images/projetos/mostras/artefacto/2017/hero.webp",
+    image: "/images/projetos/mostras/vitrine/artefacto/2017/hero.webp",
     category: Category.MOSTRAS,
   },
 ];
 
-/**
- * Detailed information about each project.
- *
- * @type {ProjectDetails[]}
- * @property {string} description - Description of the project.
- * @property {string[]} images - Array of image URLs for project details.
- * @property {number} year - Year of the project.
- * @property {string} location - Location of the project.
- */
 export const mostrasProjectDetails: ProjectDetails[] = [
   {
+    // id: "artefacto-2024",
     ...mostrasProjects[0],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[0].image,
       "/images/projetos/mostras/artefacto/2024/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2024/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2024/detalhes/03.webp",
@@ -93,13 +74,17 @@ export const mostrasProjectDetails: ProjectDetails[] = [
       "/images/projetos/mostras/artefacto/2024/detalhes/09.webp",
       "/images/projetos/mostras/artefacto/2024/detalhes/10.webp",
     ],
-    year: 2024,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2024",
+    constructionYear: "2024",
+    photographer: "Macarios",
   },
   {
+    // id: "vitrine-botteh-2024",
     ...mostrasProjects[1],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[1].image,
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/02.webp",
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/03.webp",
@@ -108,25 +93,33 @@ export const mostrasProjectDetails: ProjectDetails[] = [
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/06.webp",
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/07.webp",
     ],
-    year: 2023,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2024",
+    constructionYear: "2024",
+    photographer: "Bia Nauiack",
   },
   {
+    // id: "artefacto-2023",
     ...mostrasProjects[2],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[2].image,
       "/images/projetos/mostras/artefacto/2023/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2023/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2023/detalhes/03.webp",
       "/images/projetos/mostras/artefacto/2023/detalhes/04.webp",
     ],
-    year: 2023,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2023",
+    constructionYear: "2023",
+    photographer: "Fabio Jr Severo",
   },
   {
+    // id: "artefacto-2022",
     ...mostrasProjects[3],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[3].image,
       "/images/projetos/mostras/artefacto/2022/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2022/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2022/detalhes/03.webp",
@@ -135,13 +128,17 @@ export const mostrasProjectDetails: ProjectDetails[] = [
       "/images/projetos/mostras/artefacto/2022/detalhes/06.webp",
       "/images/projetos/mostras/artefacto/2022/detalhes/07.webp",
     ],
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2022",
+    constructionYear: "2022",
+    photographer: "Macarios",
   },
   {
+    // id: "artefacto-2021",
     ...mostrasProjects[4],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[4].image,
       "/images/projetos/mostras/artefacto/2021/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2021/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2021/detalhes/03.webp",
@@ -150,13 +147,17 @@ export const mostrasProjectDetails: ProjectDetails[] = [
       "/images/projetos/mostras/artefacto/2021/detalhes/06.webp",
       "/images/projetos/mostras/artefacto/2021/detalhes/07.webp",
     ],
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2021",
+    constructionYear: "2021",
+    photographer: "Marco Antonio",
   },
   {
+    // id: "artefacto-2020",
     ...mostrasProjects[5],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[5].image,
       "/images/projetos/mostras/artefacto/2020/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2020/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2020/detalhes/03.webp",
@@ -167,50 +168,58 @@ export const mostrasProjectDetails: ProjectDetails[] = [
       "/images/projetos/mostras/artefacto/2020/detalhes/08.webp",
       "/images/projetos/mostras/artefacto/2020/detalhes/09.webp",
     ],
-    year: 2020,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2020",
+    constructionYear: "2020",
+    photographer: "Déa Fylyk",
   },
   {
+    // id: "vitrine-artefacto-2020",
     ...mostrasProjects[6],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[6].image,
       "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/02.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/03.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/04.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/05.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/06.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/07.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/08.webp",
-      "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/09.webp",
     ],
-    year: 2020,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2020",
+    constructionYear: "2020",
+    photographer: "Daniel Katz",
   },
   {
+    // id: "artefacto-2018",
     ...mostrasProjects[7],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[7].image,
       "/images/projetos/mostras/artefacto/2018/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/03.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/04.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/05.webp",
     ],
-    year: 2018,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2018",
+    constructionYear: "2018",
+    photographer: "Salvador Cordaro",
   },
   {
+    // id: "artefacto-2017",
     ...mostrasProjects[8],
-    description: "TODO: ...",
     images: [
+      mostrasProjects[8].image,
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/02.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/03.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/04.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/05.webp",
     ],
-    year: 2017,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2017",
+    constructionYear: "2017",
+    photographer: "Marcelo Stammer",
   },
 ];

@@ -9,10 +9,8 @@ export const GOOGLE_MAPS_URL =
 export const INSTAGRAM_URL =
   "https://www.instagram.com/carolineandruskoarquitetos/";
 
-export const PHONE_NUMBER = "(41) 99123-4567";
-export const WHATSAPP_NUMBER = "+5541991234567";
-export const WHATSAPP_MESSAGE =
-  "Olá! Gostaria de saber mais informações sobre seus serviços de arquitetura.";
+export const PHONE_NUMBER = "(41) 99839-1400";
+export const WHATSAPP_NUMBER = "+5541998391400";
 
 // Colors
 export const COLOR_PRIMARY = "#575556"; // Stone 600

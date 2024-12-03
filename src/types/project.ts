@@ -14,12 +14,11 @@ export interface Project {
 
 // Extended 'ProjectDetails' interface for project/[id] page
 export interface ProjectDetails extends Project {
-  description: string;
   images: string[];
-  year: number;
   location: string;
-  status?: string;
-  date?: string;
-  constructionDate?: string;
-  photographer?: string;
+  status: string;
+  projectYear: string;
+  constructionYear: string;
+  photographer: string;
+  description?: string;
 }

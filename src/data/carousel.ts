@@ -2,27 +2,27 @@ import { Category, Project } from "@/types";
 
 export const carouselProjects: Project[] = [
   {
-    id: "hero-06",
-    title: "HERO 06",
-    image: "/images/carousel/hero-06.webp",
+    id: "01-hero",
+    title: "01 HERO",
+    image: "/images/carousel/01-hero.webp",
     category: Category.RESIDENCIAL,
   },
   {
-    id: "hero-02",
-    title: "HERO 02",
-    image: "/images/carousel/hero-02.webp",
+    id: "02-hero",
+    title: "02 HERO",
+    image: "/images/carousel/02-hero.webp",
     category: Category.RESIDENCIAL,
   },
   {
-    id: "hero-03",
-    title: "HERO 03",
-    image: "/images/carousel/hero-03.webp",
+    id: "03-hero",
+    title: "03 HERO",
+    image: "/images/carousel/03-hero.webp",
     category: Category.RESIDENCIAL,
   },
   {
-    id: "hero-05",
-    title: "HERO 05",
-    image: "/images/carousel/hero-05.webp",
+    id: "04-hero",
+    title: "04 HERO",
+    image: "/images/carousel/04-hero.webp",
     category: Category.RESIDENCIAL,
   },
 ];
