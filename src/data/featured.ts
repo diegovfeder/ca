@@ -14,8 +14,8 @@ export const featuredProjects: Project[] = [
     category: Category.RESIDENCIAL,
   },
   {
-    id: "bhs",
-    title: "BHS",
+    id: "bhs-curitiba",
+    title: "BHS CURITIBA",
     image: "/images/featured/bhs-03.webp",
     category: Category.COMERCIAL_E_CORPORATIVO,
   },

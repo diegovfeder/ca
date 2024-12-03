@@ -8,9 +8,9 @@ export const residencialProjects: Project[] = [
     category: Category.RESIDENCIAL,
   },
   {
-    id: "apt-miami-mgg",
-    title: "APARTAMENTO MIAMI MGG",
-    image: "/images/projetos/residencial/apt-miami-mgg/hero.webp",
+    id: "res-miami-mgg",
+    title: "RESIDÊNCIA MIAMI MGG",
+    image: "/images/projetos/residencial/res-miami-mgg/hero.webp",
     category: Category.RESIDENCIAL,
   },
   {
@@ -44,8 +44,8 @@ export const residencialProjects: Project[] = [
     category: Category.RESIDENCIAL,
   },
   {
-    id: "res-miami-mgg",
-    title: "RESIDÊNCIA MIAMI MGG",
+    id: "apt-litoral-mgg",
+    title: "APARTAMENTO LITORAL MGG",
     image: "/images/projetos/residencial/apt-litoral-mgg/hero.webp",
     category: Category.RESIDENCIAL,
   },
@@ -132,32 +132,38 @@ export const residencialProjects: Project[] = [
 // TODO: Add all images that we have in the public/images/projetos/... folders
 export const residencialProjectDetails: ProjectDetails[] = [
   {
+    // id: "apt-frb",
     ...residencialProjects[0],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-frb/detalhes/01.webp",
       "/images/projetos/residencial/apt-frb/detalhes/02.webp",
       "/images/projetos/residencial/apt-frb/detalhes/03.webp",
       // TODO: Add until 24 webp images
     ],
-    year: 2024,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2021",
+    constructionYear: "2024",
+    photographer: "Macarios",
   },
   {
+    // id: "res-miami-mgg",
     ...residencialProjects[1],
-    description: "TODO: ...",
     images: [
-      "/images/projetos/residencial/apt-miami-mgg/detalhes/01.webp",
-      "/images/projetos/residencial/apt-miami-mgg/detalhes/02.webp",
-      "/images/projetos/residencial/apt-miami-mgg/detalhes/03.webp",
+      "/images/projetos/residencial/res-miami-mgg/detalhes/01.webp",
+      "/images/projetos/residencial/res-miami-mgg/detalhes/02.webp",
+      "/images/projetos/residencial/res-miami-mgg/detalhes/03.webp",
       // Add more images as needed
     ],
-    year: 2023,
-    location: "Miami, FL",
+    location: "Pinecrest, Miami - FL",
+    status: "Obra Concluída",
+    projectYear: "2022",
+    constructionYear: "2023",
+    photographer: "Denilson Machado",
   },
   {
+    // id: "res-arc",
     ...residencialProjects[2],
-    description: "Residencial Arc",
     images: [
       "/images/projetos/residencial/res-arc/detalhes/01.webp",
       "/images/projetos/residencial/res-arc/detalhes/02.webp",
@@ -170,13 +176,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/res-arc/detalhes/09.webp",
       "/images/projetos/residencial/res-arc/detalhes/10.webp",
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2017",
+    constructionYear: "2022",
+    photographer: "Macarios",
   },
   {
+    // id: "apt-trw",
     ...residencialProjects[3],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-trw/detalhes/01.webp",
       "/images/projetos/residencial/apt-trw/detalhes/02.webp",
@@ -186,14 +194,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-trw/detalhes/06.webp",
       // TODO: Add until 25 images
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2020",
+    constructionYear: "2022",
+    photographer: "Macarios",
   },
-
   {
+    // id: "apt-cee",
     ...residencialProjects[4],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-cee/detalhes/01.webp",
       "/images/projetos/residencial/apt-cee/detalhes/02.webp",
@@ -205,14 +214,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-trw/detalhes/08.webp",
       // TODO: Add until 25 images
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2020",
+    constructionYear: "2023",
+    photographer: "Eduardo Macarios",
   },
-
   {
+    // id: "apt-litoral-vlr",
     ...residencialProjects[5],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-litoral-vlr/detalhes/01.webp",
       "/images/projetos/residencial/apt-litoral-vlr/detalhes/02.webp",
@@ -224,11 +234,14 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-litoral-vlr/detalhes/08.webp",
       "/images/projetos/residencial/apt-litoral-vlr/detalhes/09.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2023",
+    constructionYear: "2023",
+    photographer: "Bia Nauiack",
   },
   {
+    // id: "apt-litoral-rrm",
     ...residencialProjects[6],
     description: "Apartamento Litoral RRM",
     images: [
@@ -237,21 +250,26 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-litoral-rrm/detalhes/03.webp",
       "/images/projetos/residencial/apt-litoral-rrm/detalhes/04.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2022",
+    constructionYear: "2022",
+    photographer: "Déa Fylyk",
   },
   {
+    // id: "apt-litoral-mgg",
     ...residencialProjects[7],
-    description: "TODO: ...",
+    // FIXME: Check images
     images: ["/images/projetos/residencial/apt-litoral-mgg/detalhes/01.webp"],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2019",
+    constructionYear: "2021",
+    photographer: "Perini",
   },
   {
+    // id: "res-erg",
     ...residencialProjects[8],
-    description: "Residencia ERG",
     images: [
       "/images/projetos/residencial/res-erg/detalhes/01.webp",
       "/images/projetos/residencial/res-erg/detalhes/02.webp",
@@ -261,13 +279,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/res-erg/detalhes/06.webp",
       // TODO: Add until 25 images
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Paraná",
+    status: "Obra Concluída",
+    projectYear: "2017",
+    constructionYear: "2020",
+    photographer: "Déa Fylyk",
   },
   {
+    // id: "apt-litoral-ajb",
     ...residencialProjects[9],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-litoral-ajb/detalhes/01.webp",
       "/images/projetos/residencial/apt-litoral-ajb/detalhes/02.webp",
@@ -279,13 +299,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-litoral-ajb/detalhes/08.webp",
       "/images/projetos/residencial/apt-litoral-ajb/detalhes/09.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2020",
+    constructionYear: "2021",
+    photographer: "Marcelo Stammer",
   },
   {
+    // id: "apt-cib",
     ...residencialProjects[10],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-cib/detalhes/01.webp",
       "/images/projetos/residencial/apt-cib/detalhes/02.webp",
@@ -298,21 +320,26 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-cib/detalhes/09.webp",
       "/images/projetos/residencial/apt-cib/detalhes/10.webp",
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2018",
+    constructionYear: "2019",
+    photographer: "Déa Fylyk",
   },
   {
+    // id: "apt-jw",
     ...residencialProjects[11],
-    description: "Apartamento JW",
+    // FIXME: Check images
     images: ["/images/projetos/residencial/apt-jw/detalhes/01.webp"],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2017",
+    constructionYear: "2018",
+    photographer: "Macarios",
   },
   {
+    // id: "res-ajb",
     ...residencialProjects[12],
-    description: "Residencia AJB",
     images: [
       "/images/projetos/residencial/res-ajb/detalhes/01.webp",
       "/images/projetos/residencial/res-ajb/detalhes/02.webp",
@@ -322,21 +349,26 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/res-ajb/detalhes/06.webp",
       "/images/projetos/residencial/res-ajb/detalhes/07.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Palmeira, PR",
+    status: "Obra Concluída",
+    projectYear: "2016",
+    constructionYear: "2017",
+    photographer: "Macarios",
   },
   {
+    // id: "apt-rp",
     ...residencialProjects[13],
-    description: "Apartamento RP",
+    // FIXME: Check images
     images: ["/images/projetos/residencial/apt-rp/detalhes/01.webp"],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2014",
+    constructionYear: "2015",
+    photographer: "Marcelo Stammer",
   },
   {
+    // id: "apt-litoral-cee",
     ...residencialProjects[14],
-    description: "Apartamento Litoral CEE",
     images: [
       "/images/projetos/residencial/apt-litoral-cee/detalhes/01.webp",
       "/images/projetos/residencial/apt-litoral-cee/detalhes/02.webp",
@@ -347,13 +379,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-litoral-cee/detalhes/07.webp",
       "/images/projetos/residencial/apt-litoral-cee/detalhes/08.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2015",
+    constructionYear: "2016",
+    photographer: "Renata Salles",
   },
   {
+    // id: "ed-trianon",
     ...residencialProjects[15],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/ed-trianon/detalhes/01.webp",
       "/images/projetos/residencial/ed-trianon/detalhes/02.webp",
@@ -362,24 +396,29 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/ed-trianon/detalhes/05.webp",
       "/images/projetos/residencial/ed-trianon/detalhes/06.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2016",
+    constructionYear: "2017",
+    photographer: "Renata Salles",
   },
   {
+    // id: "apt-prg",
     ...residencialProjects[16],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-prg/detalhes/01.webp",
       "/images/projetos/residencial/apt-prg/detalhes/02.webp",
       "/images/projetos/residencial/apt-prg/detalhes/03.webp",
     ],
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2019",
+    constructionYear: "2020",
+    photographer: "Déa Fylyk",
   },
   {
+    // id: "apt-nld",
     ...residencialProjects[17],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-nld/detalhes/01.webp",
       "/images/projetos/residencial/apt-nld/detalhes/02.webp",
@@ -388,13 +427,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-nld/detalhes/05.webp",
       "/images/projetos/residencial/apt-nld/detalhes/06.webp",
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2015",
+    constructionYear: "2016",
+    photographer: "Renata Salles",
   },
   {
+    // id: "apt-dcm",
     ...residencialProjects[18],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-dcm/detalhes/01.webp",
       "/images/projetos/residencial/apt-dcm/detalhes/02.webp",
@@ -405,13 +446,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-dcm/detalhes/07.webp",
       "/images/projetos/residencial/apt-dcm/detalhes/08.webp",
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2016",
+    constructionYear: "2018",
+    photographer: "Marcelo Stammer",
   },
   {
+    // id: "apt-litoral-lgb",
     ...residencialProjects[19],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-litoral-lgb/detalhes/01.webp",
       "/images/projetos/residencial/apt-litoral-lgb/detalhes/02.webp",
@@ -420,13 +463,15 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-litoral-lgb/detalhes/05.webp",
       "/images/projetos/residencial/apt-litoral-lgb/detalhes/06.webp",
     ],
-    // TODO: Check year
-    year: 2021,
-    location: "Curitiba, PR",
+    location: "Caiobá, PR",
+    status: "Obra Concluída",
+    projectYear: "2013",
+    constructionYear: "2014",
+    photographer: "Daniel Katz",
   },
   {
+    // id: "apt-lfa",
     ...residencialProjects[20],
-    description: "TODO: ...",
     images: [
       "/images/projetos/residencial/apt-lfa/detalhes/01.webp",
       "/images/projetos/residencial/apt-lfa/detalhes/02.webp",
@@ -437,8 +482,10 @@ export const residencialProjectDetails: ProjectDetails[] = [
       "/images/projetos/residencial/apt-lfa/detalhes/07.webp",
       "/images/projetos/residencial/apt-lfa/detalhes/08.webp",
     ],
-    // TODO: Check year
-    year: 2021,
     location: "Curitiba, PR",
+    status: "Obra Concluída",
+    projectYear: "2016",
+    constructionYear: "2017",
+    photographer: "Marcelo Stammer",
   },
 ];

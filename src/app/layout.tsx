@@ -10,14 +10,20 @@ export const metadata: Metadata = {
   keywords: [
     "caroline andrusko",
     "arquitetos",
+    "curitiba",
     "arquitetura",
-    "perfeição",
-    "detalhes",
-    "projetos",
-    "plantas",
-    "interiores",
-    "paisagismo",
+    "construção civil",
+    "projetos arquitetônicos",
+    "interiores contemporâneos",
+    "projetos comerciais curitiba",
+    "arquitetura moderna",
+    "arquitetura sustentável",
     "acompanhamento de obra",
+    "reforma de imóveis",
+    "paisagismo em Curitiba",
+    "projetos residenciais curitiba",
+    "projetos comerciais curitiba",
+    "mostras de arquitetura",
   ],
   verification: {
     google: "8fgpYBOoe9Lg_H-DUvE5rz5D_HNXFsm1gvD0EHBGX5I",
@@ -32,6 +38,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
+    // TODO: Update favicon
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     // TODO: Add apple icons
