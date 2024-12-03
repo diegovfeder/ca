@@ -23,7 +23,6 @@ function HeaderContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const categoria = searchParams.get("categoria");
-  console.log({ pathname, categoria });
 
   const getLinkClassName = useCallback(
     (href: string) => {

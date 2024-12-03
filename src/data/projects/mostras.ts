@@ -62,6 +62,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2024",
     ...mostrasProjects[0],
     images: [
+      mostrasProjects[0].image,
       "/images/projetos/mostras/artefacto/2024/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2024/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2024/detalhes/03.webp",
@@ -83,6 +84,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "vitrine-botteh-2024",
     ...mostrasProjects[1],
     images: [
+      mostrasProjects[1].image,
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/02.webp",
       "/images/projetos/mostras/vitrine/botteh/2024/detalhes/03.webp",
@@ -101,6 +103,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2023",
     ...mostrasProjects[2],
     images: [
+      mostrasProjects[2].image,
       "/images/projetos/mostras/artefacto/2023/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2023/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2023/detalhes/03.webp",
@@ -116,6 +119,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2022",
     ...mostrasProjects[3],
     images: [
+      mostrasProjects[3].image,
       "/images/projetos/mostras/artefacto/2022/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2022/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2022/detalhes/03.webp",
@@ -134,6 +138,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2021",
     ...mostrasProjects[4],
     images: [
+      mostrasProjects[4].image,
       "/images/projetos/mostras/artefacto/2021/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2021/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2021/detalhes/03.webp",
@@ -152,6 +157,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2020",
     ...mostrasProjects[5],
     images: [
+      mostrasProjects[5].image,
       "/images/projetos/mostras/artefacto/2020/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2020/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2020/detalhes/03.webp",
@@ -172,6 +178,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "vitrine-artefacto-2020",
     ...mostrasProjects[6],
     images: [
+      mostrasProjects[6].image,
       "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/artefacto/2020/detalhes/02.webp",
     ],
@@ -185,6 +192,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2018",
     ...mostrasProjects[7],
     images: [
+      mostrasProjects[7].image,
       "/images/projetos/mostras/artefacto/2018/detalhes/01.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/02.webp",
       "/images/projetos/mostras/artefacto/2018/detalhes/03.webp",
@@ -201,6 +209,7 @@ export const mostrasProjectDetails: ProjectDetails[] = [
     // id: "artefacto-2017",
     ...mostrasProjects[8],
     images: [
+      mostrasProjects[8].image,
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/01.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/02.webp",
       "/images/projetos/mostras/vitrine/artefacto/2017/detalhes/03.webp",

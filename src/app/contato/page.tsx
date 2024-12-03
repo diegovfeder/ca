@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
-import { PHONE_NUMBER, WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from "@/constants";
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from "@/constants";
 import { createWhatsAppUrl } from "@/utils/whatsapp";
 
 export default function ContatoPage() {
@@ -47,7 +47,7 @@ export default function ContatoPage() {
           <Link
             rel="noopener noreferrer"
             target="_blank"
-            href={createWhatsAppUrl(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
+            href={createWhatsAppUrl(WHATSAPP_NUMBER)}
             className="flex w-fit mb-4 uppercase text-sm text-white font-medium hover:underline leading-7 bg-stone-950 focus:ring-4 focus:ring-stone-200 px-4 py-2 border border-stone-200"
           >
             WhatsApp - {PHONE_NUMBER}

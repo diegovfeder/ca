@@ -50,6 +50,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "bhs-curitiba",
     ...comercialCorporativoProjects[0],
     images: [
+      comercialCorporativoProjects[0].image,
       "/images/projetos/corporativo/bhs/detalhes/01.webp",
       "/images/projetos/corporativo/bhs/detalhes/02.webp",
       "/images/projetos/corporativo/bhs/detalhes/03.webp",
@@ -72,6 +73,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "linhares-valentini",
     ...comercialCorporativoProjects[1],
     images: [
+      comercialCorporativoProjects[1].image,
       "/images/projetos/corporativo/linhares/detalhes/01.webp",
       "/images/projetos/corporativo/linhares/detalhes/02.webp",
       "/images/projetos/corporativo/linhares/detalhes/03.webp",
@@ -96,6 +98,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "auau",
     ...comercialCorporativoProjects[2],
     images: [
+      comercialCorporativoProjects[2].image,
       "/images/projetos/comercial/auau/detalhes/01.webp",
       "/images/projetos/comercial/auau/detalhes/02.webp",
       "/images/projetos/comercial/auau/detalhes/03.webp",
@@ -118,6 +121,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "redecam",
     ...comercialCorporativoProjects[3],
     images: [
+      comercialCorporativoProjects[3].image,
       "/images/projetos/corporativo/redecam/detalhes/01.webp",
       "/images/projetos/corporativo/redecam/detalhes/02.webp",
       "/images/projetos/corporativo/redecam/detalhes/03.webp",
@@ -137,6 +141,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "mdgp",
     ...comercialCorporativoProjects[4],
     images: [
+      comercialCorporativoProjects[4].image,
       "/images/projetos/corporativo/mdgp/detalhes/01.webp",
       "/images/projetos/corporativo/mdgp/detalhes/02.webp",
       "/images/projetos/corporativo/mdgp/detalhes/03.webp",
@@ -154,6 +159,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "eurobusiness",
     ...comercialCorporativoProjects[5],
     images: [
+      comercialCorporativoProjects[5].image,
       "/images/projetos/comercial/eurobusiness/detalhes/01.webp",
       "/images/projetos/comercial/eurobusiness/detalhes/02.webp",
       "/images/projetos/comercial/eurobusiness/detalhes/03.webp",
@@ -170,6 +176,7 @@ export const comercialCorporativoProjectDetails: ProjectDetails[] = [
     // id: "fiep",
     ...comercialCorporativoProjects[6],
     images: [
+      comercialCorporativoProjects[6].image,
       "/images/projetos/comercial/fiep/detalhes/01.webp",
       "/images/projetos/comercial/fiep/detalhes/02.webp",
       "/images/projetos/comercial/fiep/detalhes/03.webp",

@@ -23,6 +23,8 @@ export async function POST(request: Request) {
 
       // To: Your email where you want to receive contacts
       to: "diegovfeder@gmail.com",
+
+      // TODO: Update email
       // to: "contato@carolineandrusko.com.br",
 
       // ReplyTo: Set this to the user's email so you can reply directly to them
